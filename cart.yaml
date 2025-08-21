@@ -49,6 +49,11 @@
     ansible.builtin.systemd:
       daemon_reload: true
 
+  - name: Unmask cart service
+    ansible.builtin.systemd:
+      name: cart
+      masked: no
+      
   - name: start and enable cart
     ansible.builtin.systemd:
       name: cart
