@@ -14,7 +14,7 @@
       name:
       - python3
       - python3-pip
-    state: present
+      state: present
 
   - name: install PyMySQL and cryptography 
     ansible.builtin.pip:
