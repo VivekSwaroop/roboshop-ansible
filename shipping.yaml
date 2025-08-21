@@ -19,7 +19,7 @@
   - name: install PyMySQL and cryptography 
     ansible.builtin.pip:
       name: "{{ item }}"
-      executable: pip3.9
+      executable: pip3
     loop:
     - cryptography
     - PyMySQL
@@ -80,7 +80,7 @@
       name: all
       login_user: root
       login_password: RoboShop@1
-      login_host: mysql.daws84s.site
+      login_host: mysql.vivekdevops.online
       state: import
       target: "{{ item }}"
     loop:
