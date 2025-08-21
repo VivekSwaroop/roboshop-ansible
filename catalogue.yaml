@@ -27,7 +27,7 @@
   - name: download catalogue application
     ansible.builtin.unarchive:
       src: /tmp/catalogue.zip
-      dest: /app
+      dest: /tmp
       remote_src: yes
 
   - name: install dependencies
