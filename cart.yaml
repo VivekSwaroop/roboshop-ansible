@@ -50,7 +50,7 @@
       daemon_reload: true
 
   - name: start and enable cart
-    ansible.builtin.systemd:
+    ansible.builtin.service:
       name: cart
-      state: started
+      state: restarted
       enabled: yes
