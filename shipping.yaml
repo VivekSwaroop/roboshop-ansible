@@ -9,6 +9,13 @@
       name: maven
       state: present
 
+  - name: Ensure Python 3 and pip are installed
+    ansible.builtin.dnf:
+      name:
+      - python3
+      - python3-pip
+    state: present
+
   - name: install PyMySQL and cryptography 
     ansible.builtin.pip:
       name: "{{ item }}"
